@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .about-me img {
+            max-width: 100%;
+            height: 200px;
+            max-height: 200px; 
+            
+        }
+        .about-me {
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center text-white d-flex align-items-center justify-content-center py-5" style="background: url('images/hero-bg.jpg') no-repeat center center; background-size: cover;">
+        <div class="container">
+            <h1 class="display-4 mb-3">Hi, I'm Aayush</h1>
+            <p class="lead mb-4">A Web Developer with a passion for creating beautiful and functional websites.</p>
+        </div>
+    </header>
+
+    <section class="about-me py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="images/dp.png" class="img-fluid rounded-circle shadow-lg mb-4" alt="Your Photo">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">About Me</h2>
+                    <p>Welcome! I'm Aayush Kumar, a BCA student at Adamas University in my second year. My passion for technology has guided me towards web application security, where I've gained two years of practical experience. My expertise includes ethical hacking, vulnerability assessment, and secure coding practices. I enjoy exploring new technologies and working on innovative projects. Let's connect to discuss security practices or exciting tech ideas!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/html.jpg" class="card-img-top" alt="HTML">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">HTML</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/css.png" class="card-img-top" alt="CSS">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">CSS</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/js.png" class="card-img-top" alt="JavaScript">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">JavaScript</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/boot.jpg" class="card-img-top" alt="Bootstrap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bootstrap</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="contact.html" class="btn btn-primary btn-lg">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/bunny0417" class="text-dark mx-2">LinkedIn</a>
+            <a href="https://github.com/bunny0417" class="text-dark mx-2">GitHub</a>
+            <a href="https://x.com/bunny_0417" class="text-dark mx-2">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
